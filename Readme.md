@@ -1,4 +1,4 @@
-Build a Mean Stack App With Node, Express & Angular
+BUILD A MEAN STACK APP WITH NODE, EXPRESS & ANGULAR
 This repo contains the code which is" located here: https://github.com/Ridwanna/meanStack.
 
 This project was generated with Angular CLI version 8.3.14.
