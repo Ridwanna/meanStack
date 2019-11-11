@@ -1,0 +1,31 @@
+
+<div class="row justify-content-center">
+  <div class="col-md-4 register-employee">
+    <!-- form card register -->
+    <div class="card card-outline-secondary">
+      <div class="card-header">
+        <h3 class="mb-0">Employee details</h3>
+      </div>
+      <div class="card-body">
+          <img class="card-img-top" src="" alt="employee-image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">{{ employee?.name }}</h4>
+            <div class="card-text">
+              <p id="employee-id">{{ employee?._id }}</p>
+              <p id="employee-id">{{ employee?.email}}</p>
+              <p id="employee-role">{{ employee?.designation }}</p>
+              <p id="employee-phone"> {{ employee?.phoneNumber }}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="text-center mt-2 edit-block">
+        <span class="edit m-2" [routerLink]="['/edit/', employee._id]">
+          <button type="button" class="btn btn-success btn-md">Edit</button>
+        </span>
+        <span class="delete" (click)="removeEmployee(employee, i)">
+          <button type="button" class="btn btn-danger btn-md">Delete</button>
+        </span>
+      </div>
+  </div>
+</div>
